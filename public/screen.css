@@ -1,0 +1,20 @@
+body {
+  background-color: #111;
+}
+
+.container {
+    background-color: #aaa;
+}
+
+.tiy_nav {
+  background-color: #333;
+  color: #fff;
+}
+
+td a:link { color: inherit; text-decoration: none; }
+td a:visited { color: inherit; }
+td a:hover { color: inherit; }
+
+li a:link { color: inherit; text-decoration: none; }
+li a:visited { color: inherit; }
+li a:hover { color: inherit;  }
