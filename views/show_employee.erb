@@ -43,26 +43,24 @@
       </div>
     </nav>
 
-    <% @employees.each do |employee| %>
       <div class="panel panel-default">
         <div class="panel-heading">Employee Information</div>
         <div class="panel-body">
           <ul class="list-group">
-            <li class="list-group-item lead"><strong>Name: </strong><%= employee["name"] %></li>
-            <li class="list-group-item"><strong>Phone: </strong><%= employee["phone"] %></li>
-            <li class="list-group-item"><strong>Address: </strong><%= employee["address"] %></li>
-            <li class="list-group-item"><strong>Position: </strong><%= employee["position"] %></li>
-            <li class="list-group-item"><strong>Salary: </strong><%= employee["salary"] %></li>
-            <li class="list-group-item"><strong>GitHub Account: </strong><%= employee["github"] %></li>
-            <li class="list-group-item"><strong>Slack Account: </strong><%= employee["slack"] %></li>
+            <li class="list-group-item lead"><strong>Name: </strong><%= @employee.name %></li>
+            <li class="list-group-item"><strong>Phone: </strong><%= @employee.phone %></li>
+            <li class="list-group-item"><strong>Address: </strong><%= @employee.address %></li>
+            <li class="list-group-item"><strong>Position: </strong><%= @employee.position %></li>
+            <li class="list-group-item"><strong>Salary: </strong><%= @employee.salary %></li>
+            <li class="list-group-item"><strong>GitHub Account: </strong><%= @employee.github %></li>
+            <li class="list-group-item"><strong>Slack Account: </strong><%= @employee.slack %></li>
           </ul>
         </div>
         <div class="panel-footer">
-          <a class="btn btn-default" href="/edit_employee?id=<%= employee['id'] %>" role="button">Edit <%= employee["name"] %> Information</a>
-          <a class="btn btn-default pull-right" href="/delete_employee?id=<%= employee['id'] %>" role="button">Delete <%= employee["name"] %> Information</a>
+          <a class="btn btn-default" href="/edit_employee?id=<%= @employee.id %>" role="button">Edit <%= @employee.name %> Information</a>
+          <a class="btn btn-default pull-right" href="/delete_employee?id=<%= @employee.id %>" role="button">Delete <%= @employee.name %> Information</a>
         </div>
       </div>
-    <% end %>
 
   </div>
 

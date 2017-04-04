@@ -71,10 +71,10 @@
         <tbody>
           <% @courses.each do |course| %>
             <tr>
-              <td><a href="/show_course?id=<%= course['id'] %>"><%= course["name"] %></a></td>
-              <td><%= course["language"] %></td>
-              <td><%= course["price"] %></td>
-              <td><%= course["cohort"] %></td>
+              <td><a href="/show_course?id=<%= course.id %>"><%= course.name %></a></td>
+              <td><%= course.language %></td>
+              <td><%= course.price %></td>
+              <td><%= course.cohort %></td>
             </tr>
           <% end %>
         </tbody>

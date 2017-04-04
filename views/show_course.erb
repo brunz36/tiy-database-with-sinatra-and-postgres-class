@@ -43,23 +43,21 @@
       </div>
     </nav>
 
-    <% @courses.each do |course| %>
       <div class="panel panel-default">
         <div class="panel-heading">Course Information</div>
         <div class="panel-body">
           <ul class="list-group">
-            <li class="list-group-item lead"><strong>Name: </strong><%= course["name"] %></li>
-            <li class="list-group-item"><strong>Programming Language: </strong><%= course["language"] %></li>
-            <li class="list-group-item"><strong>Price: </strong><%= course["price"] %></li>
-            <li class="list-group-item"><strong>Cohort Number: </strong><%= course["cohort"] %></li>
+            <li class="list-group-item lead"><strong>Name: </strong><%= @course.name %></li>
+            <li class="list-group-item"><strong>Programming Language: </strong><%= @course.language %></li>
+            <li class="list-group-item"><strong>Price: </strong><%= @course.price %></li>
+            <li class="list-group-item"><strong>Cohort Number: </strong><%= @course.cohort %></li>
           </ul>
         </div>
         <div class="panel-footer">
-          <a class="btn btn-default" href="/edit_course?id=<%= course['id'] %>" role="button">Edit <%= course["name"] %> Information</a>
-          <a class="btn btn-default pull-right" href="/delete_course?id=<%= course['id'] %>" role="button">Delete <%= course["name"] %> Information</a>
+          <a class="btn btn-default" href="/edit_course?id=<%= @course.id %>" role="button">Edit <%= @course.name %> Information</a>
+          <a class="btn btn-default pull-right" href="/delete_course?id=<%= @course.id %>" role="button">Delete <%= @course.name %> Information</a>
         </div>
       </div>
-    <% end %>
 
 
   </div>
