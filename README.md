@@ -9,13 +9,8 @@
   - Postgress
   - Active Records
 - The major features of the application are:
-  - User Input
-  - Data manipulation
-  - Use of methods & class
-  - Using a csv & text file to store information
-  - Opening and closing files
-  - Introduction to Enumberables
-  - Outputting to HTML with erb
+  - Dynamic Web pages
+  - SQL Manipulation
 
 ## DEMO
-![](https://raw.githubusercontent.com/brunz36/tiy-database-with-csv-and-enumerable-and-erb/master/docs/tiy-database_enumerable_and_erb.gif)
+![](https://raw.githubusercontent.com/brunz36/tiy-database-with-sinatra-and-postgres-class/master/docs/tiy-database-with-sinatra-and-postgres-class.gif)
